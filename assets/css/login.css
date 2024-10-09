@@ -1,0 +1,133 @@
+/* Importation de polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Police principale */
+    background-color: #f8f0e3; /* Couleur de fond crème */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox pour centrer */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Hauteur de la fenêtre */
+}
+
+.Nom {
+    font-size: 48px; /* Taille de police plus grande */
+    font-family: 'Pacifico', cursive; /* Police de style boulangerie */
+    font-weight: bold;
+    background-color: #b5673a; /* Marron foncé */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centrer le titre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet 3D */
+}
+
+.login-container {
+    background-color: #ffffff; /* Couleur de fond du conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    padding: 40px; /* Rembourrage */
+    width: 300px; /* Largeur du conteneur */
+    text-align: center; /* Centrer le texte */
+}
+
+h2 {
+    font-family: 'Pacifico', cursive; /* Police décorative */
+    font-size: 36px; /* Taille du titre */
+    color: #b5673a; /* Couleur marron foncé */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+fieldset {
+    border: none; /* Supprimer la bordure par défaut */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Marge en bas de chaque groupe */
+}
+
+label {
+    display: block; /* Étiquettes en bloc */
+    margin-bottom: 5px; /* Marge en bas */
+    font-weight: bold; /* Mettre en gras les étiquettes */
+    color: #333; /* Couleur du texte */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Champs pleine largeur */
+    padding: 10px; /* Rembourrage interne */
+    border: 2px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* Boîte de modèle de dimensionnement */
+    transition: border-color 0.3s; /* Transition pour la couleur de bordure */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #b5673a; /* Changer la couleur de bordure au focus */
+    outline: none; /* Retirer le contour par défaut */
+}
+
+.button-container {
+    margin-top: 20px; /* Marge en haut du conteneur de boutons */
+}
+
+.btn {
+    background-color: #b5673a; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Rembourrage */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur */
+    transition: background-color 0.3s; /* Transition pour la couleur de fond */
+    width: 48%; /* Largeur des boutons */
+}
+
+.btn:hover {
+    background-color: #a2562c; /* Couleur plus foncée au survol */
+}
+
+.reset {
+    background-color: #ccc; /* Couleur de fond pour le bouton d'annulation */
+}
+
+.reset:hover {
+    background-color: #bbb; /* Couleur plus foncée au survol */
+}
+
+.error {
+    color: red; /* Couleur rouge pour les messages d'erreur */
+    margin-top: 10px; /* Marge en haut */
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #b5673a; /* Marron foncé */
+    color: white;
+    text-align: center;
+    padding: 15px; /* Augmenter le rembourrage */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée pour le pied de page */
+}
+
+footer .contact {
+    margin: 10px 0;
+}
+
+footer .contact a {
+    color: white; /* Couleur des liens */
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700; /* Mettre en gras les liens */
+    transition: color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+footer .contact a:visited {
+    color: white; /* Couleur des liens visités */
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+    color: #ffd700; /* Changement de couleur au survol */
+}

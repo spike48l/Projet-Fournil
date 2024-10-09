@@ -1,0 +1,283 @@
+/* Importation de polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Police principale */
+    background-color: #f8f0e3; /* Couleur de fond crème */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox pour centrer */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    flex-direction: column; /* Disposition verticale */
+    min-height: 100vh; /* Hauteur minimale de la fenêtre */
+    position: relative; /* Position relative pour le pied de page */
+    padding-bottom: 80px; /* Espace pour le pied de page */
+}
+
+.Nom {
+    font-size: 48px; /* Taille de police plus grande */
+    font-family: 'Pacifico', cursive; /* Police de style boulangerie */
+    font-weight: bold;
+    background-color: #b5673a; /* Marron foncé */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centrer le titre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée pour un effet 3D */
+}
+
+.entete {
+    text-decoration: none;
+    border-bottom: 3px solid #b5673a; /* Bordure marron foncé */
+    background-color: #d9c6b2; /* Couleur beige claire */
+    color: #333; /* Texte sombre */
+    padding: 15px; /* Augmenter le rembourrage */
+    text-align: center; /* Centrer le menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+.entete a {
+    color: #333; /* Texte sombre pour les liens */
+    text-decoration: none;
+    margin: 0 15px; /* Espacement équilibré entre les liens */
+    font-weight: 700; /* Mettre en gras les liens */
+    transition: color 0.3s; /* Transition douce pour le changement de couleur */
+}
+
+.entete a:visited {
+    color: #333; /* Couleur des liens visités */
+}
+
+.entete a:hover {
+    color: #b5673a; /* Changement de couleur au survol */
+}
+
+/* En-tête fixe */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Couvre toute la page */
+    background-color: #b5673a; /* Couleur marron foncé */
+    padding: 15px 20px; /* Rembourrage pour l'en-tête */
+    display: flex; /* Utilisation de flexbox pour l'agencement */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Centrage vertical */
+    color: white; /* Couleur du texte blanche */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Ombre portée pour donner de la profondeur */
+    z-index: 1000; /* S'assurer que l'en-tête est au-dessus des autres éléments */
+}
+
+.fixed-header .logo img {
+    width: 40px; /* Taille initiale du logo */
+    transition: width 0.75s ease; /* Transition douce pour l'agrandissement */
+}
+
+.fixed-header .logo:hover img {
+    width: 120px; /* Taille du logo au survol */
+}
+
+.fixed-header nav ul {
+    list-style-type: none; /* Suppression des puces de la liste */
+    margin: 0; /* Aucune marge */
+    padding: 0; /* Aucune marge intérieure */
+    display: flex; /* Flexbox pour l'alignement des éléments */
+}
+
+.fixed-header nav ul li {
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+}
+
+.fixed-header nav ul li a {
+    text-decoration: none; /* Pas de soulignement */
+    color: white; /* Couleur blanche pour les liens */
+    padding: 10px; /* Rembourrage pour les liens */
+    display: flex; /* Alignement des éléments dans le lien */
+    align-items: center; /* Centrage vertical */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+    line-height: 1.5; /* Assurer une hauteur de ligne uniforme */
+}
+
+.fixed-header nav ul li a i {
+    margin-right: 8px; /* Espacement entre l'icône et le texte */
+}
+
+.fixed-header nav ul li a:hover {
+    color: #ffd700; /* Couleur dorée au survol pour attirer l'attention */
+}
+
+.main {
+    padding: 20px; /* Rembourrage pour le contenu principal */
+    margin-top: 80px; /* Marge supérieure pour éviter le chevauchement avec l'en-tête */
+    display: flex; /* Flexbox pour l'alignement */
+    flex-direction: column; /* Disposition verticale */
+    align-items: center; /* Centrer le contenu */
+}
+
+.login-container {
+    background-color: #ffffff; /* Couleur de fond du conteneur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    padding: 40px; /* Rembourrage */
+    width: 300px; /* Largeur du conteneur */
+    text-align: center; /* Centrer le texte */
+    margin: 20px; /* Marge autour du conteneur pour le centrer */
+}
+
+fieldset {
+    border: none; /* Supprimer la bordure par défaut */
+    margin: 0 auto; /* Centre le fieldset */
+}
+
+h2 {
+    font-family: 'Pacifico', cursive; /* Police décorative */
+    font-size: 36px; /* Taille du titre */
+    color: #b5673a; /* Couleur marron foncé */
+    margin-bottom: 20px; /* Marge en bas */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Marge en bas de chaque groupe */
+}
+
+label {
+    display: block; /* Étiquettes en bloc */
+    margin-bottom: 5px; /* Marge en bas */
+    font-weight: bold; /* Mettre en gras les étiquettes */
+    color: #333; /* Couleur du texte */
+}
+
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%; /* Champs pleine largeur */
+    padding: 10px; /* Rembourrage interne */
+    border: 2px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    box-sizing: border-box; /* Boîte de modèle de dimensionnement */
+    transition: border-color 0.3s; /* Transition pour la couleur de bordure */
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border-color: #b5673a; /* Changer la couleur de bordure au focus */
+    outline: none; /* Retirer le contour par défaut */
+}
+
+.button-container {
+    margin-top: 20px; /* Marge en haut du conteneur de boutons */
+}
+
+.btn {
+    background-color: #b5673a; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Rembourrage */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur */
+    transition: background-color 0.3s; /* Transition pour la couleur de fond */
+    width: 48%; /* Largeur des boutons */
+}
+
+.btn:hover {
+    background-color: #a2562c; /* Couleur plus foncée au survol */
+}
+
+.reset {
+    background-color: #ccc; /* Couleur de fond pour le bouton d'annulation */
+}
+
+.reset:hover {
+    background-color: #bbb; /* Couleur plus foncée au survol */
+}
+
+.error {
+    color: red; /* Couleur rouge pour les messages d'erreur */
+    margin-top: 10px; /* Marge en haut */
+}
+
+/* Styles pour les produits */
+.produits-info {
+    display: flex; /* Utilisation de flexbox pour l'alignement */
+    flex-wrap: wrap; /* Permettre aux produits de s'enrouler */
+    justify-content: center; /* Centrer les produits */
+    margin: 20px; /* Marge autour de la section des produits */
+}
+
+.produit {
+    background-color: #ffffff; /* Couleur de fond des produits */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    margin: 10px; /* Marge entre les produits */
+    padding: 15px; /* Rembourrage interne */
+    transition: transform 0.3s; /* Transition douce pour l'animation */
+    width: 250px; /* Largeur de chaque produit */
+}
+
+.produit:hover {
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus marquée au survol */
+}
+
+.produit img {
+    max-width: 100%; /* Limiter la largeur des images */
+    border-radius: 5px; /* Coins arrondis pour les images */
+}
+
+.produit h3 {
+    font-family: 'Pacifico', cursive; /* Police décorative pour le titre du produit */
+    font-size: 24px; /* Taille du titre */
+    color: #b5673a; /* Couleur marron foncé */
+    margin-bottom: 10px; /* Marge en bas */
+}
+
+.produit p {
+    color: #555; /* Couleur gris pour la description */
+    margin-bottom: 15px; /* Marge en bas */
+}
+
+/* Pied de page */
+footer {
+    background-color: #b5673a; /* Couleur de fond marron foncé */
+    color: white; /* Couleur du texte blanche */
+    text-align: center; /* Centrer le texte */
+    padding: 20px; /* Rembourrage interne */
+    position: fixed; /* Fixer en bas */
+    bottom: 0; /* Alignement en bas */
+    width: 100%; /* Largeur totale */
+}
+
+footer p {
+    margin: 0; /* Pas de marge par défaut */
+    font-size: 14px; /* Taille de police pour le texte du pied de page */
+}
+
+footer a {
+    color: white; /* Couleur dorée pour les liens dans le pied de page */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+}
+.produit img {
+    width: 250px; /* Largeur fixe des images */
+    height: 200px; /* Hauteur fixe des images */
+    object-fit: cover; /* Recadre l'image pour remplir l'espace */
+    border-radius: 5px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
