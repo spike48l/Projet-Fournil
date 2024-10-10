@@ -2,7 +2,7 @@
 <br>Un projet pour une boulangerie fictive codé avec le framework codeIgniter 3.1.8
 Aller sur le config.php et chercher cette ligne "$config['base_url']"
 modifier la ligne soit comme ceci 
-$config['base_url'] ='http://localhost:8080/codeIgniter318/'
+<br>$config['base_url'] ='http://localhost:8080/codeIgniter318/'
 soit avec votre adresse IP
 $db['default'] = array(
 	'dsn'	   => 'mysql:host=localhost ou l'hôte utilisé; dbname=fournil; charset=utf8;',
