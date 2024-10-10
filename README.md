@@ -5,25 +5,25 @@ modifier la ligne soit comme ceci
 <br>$config['base_url'] ='http://localhost:8080/codeIgniter318/'
 soit avec votre adresse IP
 <br>$db['default'] = array(
-	'dsn'	   => 'mysql:host=localhost ou l'hôte utilisé; dbname=fournil; charset=utf8;',
-  	'hostname' => 'localhost ou le nom de l’hôte que vous utilisez',
-	'username' => 'identifiant_SGBDR',
-	'password' => 'motdepasse_SGBDR',
-	'database' => 'fournil',
-	'dbdriver' => 'pdo',//mysqli',
-	'dbprefix' => '',
-	'pconnect' => TRUE,
-	'db_debug' => TRUE,//(ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
+	<br>'dsn'	   => 'mysql:host=localhost ou l'hôte utilisé; dbname=fournil; charset=utf8;',
+  	<br>'hostname' => 'localhost ou le nom de l’hôte que vous utilisez',
+	<br>'username' => 'identifiant_SGBDR',
+	<br>'password' => 'motdepasse_SGBDR',
+	<br>'database' => 'fournil',
+	<br>'dbdriver' => 'pdo',//mysqli',
+	<br>'dbprefix' => '',
+	<br>'pconnect' => TRUE,
+	<br>'db_debug' => TRUE,//(ENVIRONMENT !== 'production'),
+	<br>'cache_on' => FALSE,
+	<br>'cachedir' => '',
+	<br>'char_set' => 'utf8',
+	<br>'dbcollat' => 'utf8_general_ci',
+	<br>'swap_pre' => '',
+	<br>'encrypt' => FALSE,
+	<br>'compress' => FALSE,
+	<br>'stricton' => FALSE,
+	<br>'failover' => array(),
+	<br>'save_queries' => TRUE
 );
 <br>
 Importer la base de donnée et la vue avec les script mis a disposition dans le dossier scriptSQL
